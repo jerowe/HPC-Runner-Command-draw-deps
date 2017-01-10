@@ -11,11 +11,9 @@ Call the hpcrunner.pl draw_deps command
 use MooseX::App::Command;
 use Algorithm::Dependency::Source::HoA;
 use Algorithm::Dependency::Ordered;
-use File::Spec;
 use Data::Dumper;
 use GraphViz2;
 
-use Log::Handler;
 extends 'HPC::Runner::Command';
 
 with 'HPC::Runner::Command::Utils::Base';
@@ -73,10 +71,9 @@ sub schedule_jobs {
 
     $graph -> dependency(data => $dep );
 
-    my($format)      = shift || 'svg';
-    my($output_file) = shift || File::Spec -> catfile("dependency.hpc.$format");
+    my($format)      =  'svg';
 
-    $graph -> run(format => $format, output_file => $output_file);
+    $graph -> run(format => $format, output_file => "dependency.hpc.$format" );
 
     exit 0;
 }

@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Draw out the dependency trees of HPC::Runner::Command files",
    "author" : [
       "Jillian Rowe <jillian.e.rowe@gmail.com>"
    ],
@@ -37,17 +37,29 @@
       },
       "runtime" : {
          "requires" : {
+            "Algorithm::Dependency::Ordered" : "0",
+            "Algorithm::Dependency::Source::HoA" : "0",
+            "Data::Dumper" : "0",
+            "File::Spec" : "0",
+            "GraphViz2" : "0",
+            "HPC::Runner::Command" : "0",
+            "HPC::Runner::Command::Utils::Base" : "0",
+            "HPC::Runner::Command::Utils::Log" : "0",
+            "HPC::Runner::Command::submit_jobs::Utils::Scheduler" : "0",
+            "Log::Handler" : "0",
+            "MooseX::App::Command" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Test::More" : "0.96",
+            "strict" : "0"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.01",
+   "version" : "3.0.0",
    "x_serialization_backend" : "JSON::XS version 3.02"
 }
 
