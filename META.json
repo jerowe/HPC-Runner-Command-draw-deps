@@ -40,13 +40,11 @@
             "Algorithm::Dependency::Ordered" : "0",
             "Algorithm::Dependency::Source::HoA" : "0",
             "Data::Dumper" : "0",
-            "File::Spec" : "0",
             "GraphViz2" : "0",
             "HPC::Runner::Command" : "0",
             "HPC::Runner::Command::Utils::Base" : "0",
             "HPC::Runner::Command::Utils::Log" : "0",
             "HPC::Runner::Command::submit_jobs::Utils::Scheduler" : "0",
-            "Log::Handler" : "0",
             "MooseX::App::Command" : "0",
             "perl" : "5.008005"
          }
